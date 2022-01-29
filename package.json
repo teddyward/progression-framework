@@ -5,7 +5,7 @@
   "description": "Monzo's progression framework site",
   "author": "Lucas Johnston <lucasjohnston@monzo.com>",
   "engines": {
-    "node": "^14.15.0",
+    "node": "^16",
     "yarn": "^1.22.1"
   },
   "dependencies": {

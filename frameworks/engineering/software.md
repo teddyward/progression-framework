@@ -4,11 +4,11 @@ title: "🦛 Software Engineering Framework"
 sidebarTitle: "🦛 Software"
 sidebarGroup: "engineering"
 yaml: true
-levels: 6
+levels: 5
 homepage: true
 topics:
   - name: "craft"
-    title:
+    title: "💻 Craft"
     content:
       - level: 1
         criteria:
@@ -46,7 +46,7 @@ topics:
           - "I carefully review proposed changes to our system."
           - "I am responsible for reducing leaks in the abstractions of our architecture."
   - name: "coordination"
-    title: "Coordination"
+    title: "☀️ Coordination"
     content:
       - level: 1
         criteria:
@@ -173,10 +173,6 @@ topics:
           - "Given as reason for other engineers to join Monzo"
           - "Proactively shares knowledge internally"
           - "Acts as the 'sole proprietor', in the CEO mindset, their ego/agenda is not a factor in their thinking or decision making"
-      - level: 6
-        criteria:
-          - "Attracts other very senior hires"
-          - "Engineers around them get better and have a bigger impact, faster"
   - name: "mastery"
     title: "🛠️ Mastery"
     content:
@@ -276,8 +272,6 @@ topics:
           - "Encourages and supports other engineers to achieve outstanding results"
           - "Creates major contributions to our documentation, and creates documents that provide guidelines and best practices to other engineers"
           - "Works with technical and non-technical stakeholders to identify high-level requirements and turns them into discrete technical concerns"
-      - level: 6
-        criteria:
           - "Makes major contributions to technologies and libraries that we depend on"
           - "Uses a risk-based approach and manages technical debt systematically to focus the team’s design and development efforts on the most important problems"
           - "Works with business and technology stakeholder to translate difficult business problems into technical designs, thereby ensuring that the organisation derives maximum value from services"

@@ -57,7 +57,7 @@ const SidebarRenderer = ({
           <SidebarReset>
             <SidebarScroll>
               <ScrollbarHeader>
-                <SidebarIcon src={favicon} alt="Monzo" />
+                <SidebarIcon src={favicon} alt="Kevala" />
                 <FlexboxPush>
                   <CloseIcon onClick={sidebarClickHandler} src={closeIcon} />
                 </FlexboxPush>
@@ -104,7 +104,7 @@ class Layout extends React.Component<Props, State> {
     return (
       <Contain>
         <Helmet>
-          <title>Progression at Monzo</title>
+          <title>Progression at Kevala</title>
         </Helmet>
         <SidebarRenderer
           data={data}

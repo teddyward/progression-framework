@@ -1,4 +1,5 @@
 html {
+    font-family: "Open Sans", Roboto, Helvetica, sans-serif !important;
     overflow-y: auto;
 }
 body, #___gatsby, #___gatsby > * {

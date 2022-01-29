@@ -9,16 +9,15 @@ export const LANDSCAPE = 'min-aspect-ratio: 13/9'
 export const BREAKPOINT_MOBILE = 736
 export const BREAKPOINT_TABLET = 1024
 export const BREAKPOINT_DESKTOP = 1300
-export const MIDNIGHT_SKY = '#14233c'
-export const LAGOON_BLUE = '#145d8e'
-export const GREY_BLUE = '#707b8c'
+export const KEVALA_DARK_BLUE = '#070f1b'
+export const KEVALA_BLUE = '#245297'
+export const KEVALA_LIGHT_BLUE = '#76a0de'
 
 // Styles
 // Error page
 
 export const ErrorPageHeader = styled.h1`
   font-weight: 300;
-  font-family: 'MaisonNeueMono', Consolas, monaco, monospace;
   font-size: 10rem;
   opacity: 0.4;
 `
@@ -41,10 +40,8 @@ export const Card = styled.div`
 `
 
 export const Title = styled.h1`
-  font-family: 'MaisonNeue', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
   font-weight: 600;
-  color: ${MIDNIGHT_SKY};
+  color: ${KEVALA_DARK_BLUE};
   margin-top: 0;
 
   @media (min-width: ${BREAKPOINT_MOBILE}px) and (max-width: ${BREAKPOINT_TABLET}px) {
@@ -63,10 +60,8 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.h3`
-  font-family: 'MaisonNeue', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
   font-weight: 600;
-  color: ${GREY_BLUE};
+  color: ${KEVALA_LIGHT_BLUE};
 
   @media (min-width: ${BREAKPOINT_MOBILE}px) and (max-width: ${BREAKPOINT_TABLET}px) {
     font-size: 1.8em;
@@ -85,11 +80,9 @@ export const Subtitle = styled.h3`
 
 export const DefaultStyledLink = styled(Link)`
   cursor: pointer;
-  font-family: 'MaisonNeue', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
   font-weight: 500;
   font-size: 1.3em;
-  color: ${MIDNIGHT_SKY} !important;
+  color: ${KEVALA_DARK_BLUE} !important;
   width: 100%;
   height: 100%;
   opacity: 1;
@@ -99,7 +92,7 @@ export const DefaultStyledLink = styled(Link)`
 
   &:hover {
     opacity: 0.7;
-    color: ${LAGOON_BLUE};
+    color: ${KEVALA_BLUE};
   }
   &:focus {
     outline: none;
@@ -112,11 +105,9 @@ export const DefaultStyledLink = styled(Link)`
 
 export const StyledLink = styled(PartialNavLink)`
   cursor: pointer;
-  font-family: 'MaisonNeue', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
   font-weight: 500;
   font-size: 1.3em;
-  color: ${MIDNIGHT_SKY} !important;
+  color: ${KEVALA_DARK_BLUE} !important;
   width: 100%;
   height: 100%;
   opacity: 1;
@@ -126,7 +117,7 @@ export const StyledLink = styled(PartialNavLink)`
 
   &:hover {
     opacity: 0.7;
-    color: ${LAGOON_BLUE};
+    color: ${KEVALA_BLUE};
   }
   &:focus {
     outline: none;
@@ -275,18 +266,18 @@ export const LevelsTextWrapper = styled.div`
 export const LevelsText = styled.h2`
   cursor: pointer;
   margin-top: 0;
-  font-family: 'MaisonNeue', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
   opacity: 0.25;
 
   &:hover {
     opacity: 0.5;
+    color: #FF802B;
   }
 
   ${props =>
     props.active &&
     css`
       opacity: 1;
+      color: #FF802B;
     `}
 `
 
@@ -340,7 +331,7 @@ export const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  background-color: #f7f7f7;
+  background-color: #fff;
   color: black;
   overflow-x: hidden;
   overflow-y: auto;
@@ -350,8 +341,6 @@ export const Sidebar = styled.div`
   min-width: 320px;
   h4 {
     padding-top: 0;
-    font-family: 'MaisonNeue', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica',
-      'Arial', sans-serif;
     font-size: 1.3em;
   }
 
@@ -512,14 +501,14 @@ export const DescriptionText = styled.p`
 // Levelled framework view
 
 export const ExamplesText = styled.p`
-  color: ${LAGOON_BLUE};
+  color: ${KEVALA_BLUE};
   font-weight: 600;
   opacity: 1;
   cursor: pointer;
 
   &:hover {
     opacity: 0.7;
-    color: ${LAGOON_BLUE};
+    color: ${KEVALA_BLUE};
   }
 `
 
@@ -557,10 +546,8 @@ export const CardContentList = styled.ul`
 `
 
 export const CardTitle = styled.p`
-  font-family: 'MaisonNeue', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
   font-weight: 600;
-  color: ${MIDNIGHT_SKY};
+  color: ${KEVALA_DARK_BLUE};
   margin-top: 0;
   font-size: 1.4rem;
 `
@@ -572,10 +559,6 @@ export const CardTitleGroup = styled.div`
 // Text framework view
 
 export const MarkdownContent = styled.div`
-  * {
-    font-family: 'MaisonNeue', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica',
-      'Arial', sans-serif !important;
-  }
   h2 {
     margin-top: 0.2em;
   }

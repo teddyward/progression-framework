@@ -12,24 +12,144 @@ topics:
     content:
       - level: 1
         criteria:
-          - "My code is free of glaring errors. It is well-documented and appropriately utilizes manual vs. automated tests."
           - "I puzzle through problems. I seek guidance from other engineers, rather than answers."
           - "I document my code's performance, and verify it, using tools like the Chrome Performance tab and PyInstrument."
+        exampleCriteria:
+          - criteria: "My code is free of glaring errors. It is well-documented and appropriately utilizes manual vs. automated tests."
+            examples:
+              - "I know what code smells are, and generally avoid them."
+              - "I am familiar with the Google style guides."
+              - "I effectively leverage Cypress, PyTest, or component-level tests."
+              - "I provide sample output, or review apps. These artifacts do, in fact, work."
       - level: 2
         criteria:
-          - "I leverage the idioms and design patterns of my primary programming language. I optimize for either speed or quality (or both?!), depending on the explicitly-stated needs of my team."
-          - "I read PRs from my peers, and provide detailed feedback."
+          - "I create design documents that acknowledge multiple possible solutions, and their trade-offs. I design interacting components, and solicit feedback on my interfaces."
+          - "I regularly identify and resolve performance and functional defects in our codebase, even in code I didn't write."
         exampleCriteria:
-          - criteria: "I document problems and trade-offs. I design interacting components, and solicit feedback on my interfaces."
+          - criteria: "I leverage the idioms and design patterns of my primary programming language. I optimize for either speed or quality (or both?!), depending on the explicitly-stated needs of my team."
             examples:
-              - "Positive comments are still very much encouraged."
-              - "I noticed a bug in this edge case."
+              - "I consider metrics (Lighthouse)"
+              - "Flex-box, django APIs, geospatial wizardry, Postgres, Heroku, Mapbox"
+              - "I know what design patterns are, and try to leverage them."
+              - "My code is self-documenting, but I document it anyway."
+              - "My PR descriptions serve as reliable context for future pangolins."
       - level: 3
         criteria:
           - "I keep up-to-date on the ecosystem of tools and libraries supporting my primary programming language."
           - "I design core components. Simplicity, maintanence, flexibility, and well... SOLIDity are all critical to my designs."
           - "I am generous with my time, and consider no work 'beneath me.' I effectively and quickly debug cross-module issues, and may intuit where bugs might lie due to my deep knowledge of the libraries, platforms, and systems that my software relies on."
+      - level: 4
+        criteria:
+          - "I track the performance of our whole system, and recommend improvements across the stack."
+          - "I design systems. I’m able to create coherent designs with multiple components interacting across API or system boundaries; bugs do not creep in at the boundaries between components due to mismatches in expectations of what is technically feasible."
+      - level: 5
+        criteria:
+          - "I keep up-to-date on architectural patterns, and reflect on how Kevala fits in."
+          - "I am responsible for reducing leaks in the abstractions of our architecture."
+  - name: "coordination"
+    title: "☀️ Coordination"
+    content:
+      - level: 1
+        criteria:
+          - "I am absorbing information about the clean energy sector."
+          - "Where things are confusing for me, I document them (or fix the documentation), for the benefit of future pangolins"
+          - "I track my work in Jira, in alignment with broader epics"
+      - level: 2
+        criteria:
+          - "I can effectively articulate how my work helps to decarbonize the energy sector."
+          - "I help newer hires throughout their onboarding process."
+          - "I break down epics into stories, and effectively pace my progress through these."
+      - level: 3
+        criteria:
+          - "I identify opportunities to better align our products to Kevala's mission of decarbonization."
+          - "I am able to manage my own projects, when required. I draft epics as living documentation, incorporating feedback as requirements change."
         exampleCriteria:
+          - criteria: "I am involved with hiring in some form."
+            examples:
+              - "I volunteer to run tech screens or sit on interview panels"
+              - "I provide feedback on team job descriptions"
+              - "I leverage my professional network in recruiting"
+      - level: 4
+        criteria:
+          - "I hold Kevala accountable for the impact that we have on the climate."
+          - "I help identify talent gaps required for team success."
+          - "I bootstrap new initiatives. I am able to manage my own boards, when required. I prioritize work across an annual time horizon."
+      - level: 5
+        criteria:
+          - "I take responsibility for how Kevala (attempts to) decarbonize."
+          - "I take a long view on organizational planning. I identify and resolve risks to institutional knowledge."
+          - "I ensure the long term success of our platform by identifying horizontal engineering objectives, and prioritizing these across a multi-year time horizon."
+  - name: "impact"
+    title: "👩‍💼 Impact"
+    content:
+      - level: 1
+        criteria:
+          - "I take time to try to understand our user personas."
+          - "I take pride in the features I release, and own any bugs in their deployment"
+          - "I avoid contributing to technical and functional debt, as inhibitors to the scaling of the Assessor platform"
+      - level: 2
+        criteria:
+          - "I know who our users are, and connect their goals to the work I do."
+          - "I own several features in the Assessor platform. My peers seek out and respect my review on related PRs."
+          - "I know our platform's strengths and weaknesses, as far as technical debt and scalability"
+      - level: 3
+        criteria:
+          - "I have met our users or clients, or at least potential ones."
+          - "I own technical decisions with high risk and low reversibility, and delegate technical decisions with low risk and high reversibility"
+          - "I identify bottlenecks in our application, and am able to ameliorate the problems, if given the time"
+      - level: 4
+        criteria:
+          - "I know our users' pain points, and can articulate the steps that we would take to resolve them."
+          - "I am the authority for the technical implementation of a customer-facing application. I own its deployment in Heroku."
+          - "I identify bottlenecks in our applications, and know when to resolve them and when to delegate their resolution"
+      - level: 5
+        criteria:
+          - "Our users trust me."
+          - "I am familiar with all our applications, and can effectively lead discussions about most aspects therein"
+          - "I understand the limitations of our platform, and draft roadmaps to their resolution (regardless of whether these are actualized)"
+  - name: "influence"
+    title: "✨ Influence"
+    content:
+      - level: 1
+        criteria:
+          - "I write clearly. I ask questions and collaborate with my peers."
+          - "I follow the processes put in place by others"
+          - "I listen to different perspectives and I cut biases from my words and actions."
+        exampleCriteria:
+          - criteria: "I read PRs from my peers, and indicate that I have done so."
+            examples:
+              - "Positive comments are great. Even just saying 'TIL ___' is a useful comment."
+              - "This doesn't quite match our style guide."
+      - level: 2
+        criteria:
+          - "I resolve ambiguities in assignments and processes. I proactively present information to the right people."
+          - "I build relationships with other applications teams (pangolins) and product teams to clarify technical requirements."
+        exampleCriteria:
+          - criteria: "I contribute to a positive sense of community on my team, in some form"
+            examples:
+              - "Help new hires throughout the on-boarding process"
+              - "Actively participate in team meetings or pair programming work"
+              - "Participate in company-wide seminars like the diversity salon or tech talks"
+          - criteria: "I read PRs from my peers, and provide detailed feedback."
+            examples:
+              - "Positive comments are still very much encouraged."
+              - "I noticed a bug in this edge case."
+      - level: 3
+        criteria:
+          - "I build relationships with the data science and data engineering teams to ameliorate technical debt, blindspots, or mismatched requirements."
+        exampleCriteria:
+          - criteria: "I provide resources to help the people around me to be more effective"
+            examples:
+              - "Tech talks on innovative technologies (GCP resources, etc.)"
+              - "Written tutorials on tools (debuggers, dev and testing tools, Git)"
+              - "PR contributions to other teams"
+              - "Help product managers and designers understand non-functional requirements"
+              - "Help devs on other teams understand requirements due to technical requirements of my team's stack"
+          - criteria: "I contribute to a positive sense of community on my team, in some form"
+            examples:
+              - "Help new hires throughout the on-boarding process"
+              - "Organize or facilitate team meetings or pair programming work"
+              - "Participate in company-wide seminars like the diversity salon or tech talks"
           - criteria: "I read PRs from my peers, and provide holistic feedback."
             examples:
               - "Positive comments are still very much encouraged."
@@ -37,142 +157,21 @@ topics:
               - "This is not necessarily limited to your immediate team"
       - level: 4
         criteria:
-          - "I track the performance of our whole system, and recommend improvements across the stack."
-          - "I keep tabs on PRs, but focus on providing feedback to component and system design."
-          - "I design systems. I’m able to create coherent designs with multiple components interacting across API or system boundaries; bugs do not creep in at the boundaries between components due to mismatches in expectations of what is technically feasible."
+          - "I build relationships throughout Kevala to drive business goals"
+          - "I drive changes (when sensible) to engineering practices with well-reasoned arguments and a 'strong opinion, weakly held' mentality"
+          - "I create an inclusive environment for others and ensure diverse perspectives are included. I leverage the strengths & skills of the members of my team."
+          - "I keep tabs on PR-level work across the team, but focus on providing feedback to component and system design."
       - level: 5
         criteria:
-          - "I keep up-to-date on architectural patterns, and reflect on how Kevala fits in."
-          - "I carefully review proposed changes to our system."
-          - "I am responsible for reducing leaks in the abstractions of our architecture."
-  - name: "coordination"
-    title: "☀️ Coordination"
-    content:
-      - level: 1
-        criteria:
-          - "scaling the team"
-          - "stories/epics/boards"
-          - "decarbonization as a company objective"
-          - "Delivers assigned tasks, working with a more senior team member, and able to take PR feedback to improve their work"
-      - level: 2
-        criteria:
-          - "Delivers assigned tasks that meet expected criteria"
-          - "Works for the team, focuses on tasks that contribute to team goals"
-          - "Tries to unblock themselves first before seeking help"
-          - "Manages their own time effectively, prioritises their workload well, on time for meetings, aware when blocking others and unblocks"
-          - "Helps the team, does what needs doing"
-          - "Breaks down small/medium problems into iterative steps"
-      - level: 3
-        criteria:
-          - "Delivers large well-defined tasks and solves small scope not-well-defined problems"
-          - "Contributes to writing proposals (Co-authors with more experienced Engineer)"
-          - "Breaks down large problems into smaller iterative steps across multiple PRs"
-      - level: 4
-        criteria:
-          - "Solves ambiguous problems"
-          - "Leads writing small/medium scope proposals"
-          - "Thrown at fires and resolves / contributes heavily to resolving them"
-          - "Makes pragmatic choices about taking on tech debt"
-          - "Considers multiple different solutions for solving a problem"
-          - "Breaks down projects into smaller iterative steps that each deliver value"
-      - level: 5
-        criteria:
-          - "Solves the 'hard problem' in a project e.g. Mastercard crypto and sees it through to resolution"
-          - "Solves larger ambiguous problems"
-          - "Leads incident resolutions"
-          - "Makes judgements about when to diverge from the immediate goal to achieve something else"
-          - "Leading large scale technical infrastructure projects (level 5 would originate or complete, probably)"
-          - "Leads writing large scope proposals"
-          - "Breaks down large long-lasting projects into sensible discrete chunks that compound to achieve a large goal"
-          - "Helps prioritise and balance short-term and long-term investments, focusing on high impact, high value work"
-      - level: 6
-        criteria:
-          - "Accountable for delivery of large, mission critical engineering projects"
-          - "Originates or finishes large, horizontal engineering efforts"
-  - name: "impact"
-    title: "👩‍💼 Impact"
-    content:
-      - level: 1
-        criteria:
-          - "user"
-          - "ownership"
-          - "scaling the platform"
-      - level: 2
-        criteria:
-          - "Contributes to maintaining the Monzo culture in their team, helping new joiners"
-          - "Gets buy-in on technical decision-making and proposed designs"
-          - "Proactively involves other relevant engineers"
-          - "Sought out for code reviews"
-          - "Instills Monzo engineering principles in other engineers"
-          - "Helps the growth of engineers around them through coaching and mentoring"
-          - "Helps their squad work together more effectively"
-          - "Helps facilitate team/squad rituals"
+          - "I drive changes (when sensible) to engineering practices with well-reasoned arguments and a 'strong opinion, weakly held' mentality"
+          - "I lead by example. I am aware of my public presence and actions and my influence on the people around me and Kevala's culture. I personify Kevala's values."
+          - "I review high level designs and effectively steward Kevala's application architecture."
         exampleCriteria:
-          - criteria: "Makes improvements to modules/libraries/services and goes out of their way to help others learn from it"
+          - criteria: "I represent Kevala's applications to other organizations, internally and externally"
             examples:
-              - "I've used RxJava for the first time here, I'm going to do a talk about why I've done this, here's some great blog posts on it"
-      - level: 3
-        criteria:
-          - "Instills Monzo engineering principles across a whole squad of engineers"
-          - "Works with relevant Engineering Managers to help other engineers perform and grow"
-          - "Fosters effective collaboration in multi-disciplinary squads (backend, mobile, data, design, web)"
-          - "Delegates technical decisions with low risk and high reversibility"
-          - "Owns technical decisions with high risk and low reversibility"
-          - "Contributes to maintaining the Monzo culture in the wider company"
-          - "Bootstraps new teams"
-      - level: 4
-        criteria:
-          - "Helps groups of squads work together more effectively"
-          - "Starts things that they cannot finish by themselves"
-          - "Delegates to make better use of their time"
-      - level: 5
-        criteria:
-          - "Helps groups of squads work together more effectively"
-          - "Starts things that they cannot finish by themselves"
-          - "Delegates to make better use of their time"
-  - name: "influence"
-    title: "✨ Influence"
-    content:
-      - level: 1
-        criteria:
-          - "culture"
-          - "communication (networking)"
-          - "I follow the processes put in place by those before me"
-        exampleCriteria:
-          - criteria: "Peer review - I read PRs from my peers, and indicate that I have done so."
-            examples:
-              - "Positive comments are great. Even just saying 'TIL ___' is a useful comment."
-              - "This doesn't quite match our style guide."
-      - level: 2
-        criteria:
-          - "Proactively raises issues they spot in retrospectives"
-      - level: 3
-        criteria:
-          - "Provides valuable input to proposals from their team"
-          - "Proactively improves modules, services, systems and codebases they encounter, 'this doesn't make sense, I'm going to do something about it'"
-          - "Contributes to scaling engineering hiring (e.g. leads calls, does onsite interviews)"
-          - "Builds simple tools or iterates existing tools for the benefit of all engineers"
-          - "Helps Product Managers and Designers to understand and consider non-functional requirements in the product development process"
-          - "Promotes accessibility good practice and helps other engineers to deepen their accessibility knowledge, including demonstrating how to use screen readers"
-          - "Promotes security good practice and helps other engineers to deepen their security knowledge"
-          - "Promotes performance good practice and helps other engineers to deepen their performance knowledge"
-      - level: 4
-        criteria:
-          - "Positively influences engineers in the wider org"
-          - "Maintains documentation on things they know the most, makes it easy for future engineers to interact with systems/code"
-          - "Clears blockers for junior team members, provides context/guidance, or knows how to escalate"
-          - "Asks why. Does not take truths for granted unless they understand exactly where they are coming from (especially with regards to regulation, compliance, etc)"
-          - "Drives changes to engineering practices with well-reasoned arguments and a 'strong opinion, weakly held' mentality"
-          - "Shapes the direction of systems designs with less experienced engineers"
-          - "Breaks down delivery and knowledge silos in their squad"
-          - "Keeps up to date with industry developments and feeds specific technical and non-functional recommendations back into the business"
-          - "Proactively identifies opportunities to improve company culture around coding standards and non-functional requirements"
-      - level: 5
-        criteria:
-          - "Represents Monzo at conferences/events"
-          - "Given as reason for other engineers to join Monzo"
-          - "Proactively shares knowledge internally"
-          - "Acts as the 'sole proprietor', in the CEO mindset, their ego/agenda is not a factor in their thinking or decision making"
+              - "Demos to clients"
+              - "Tech talks at conferences"
+              - "Blog posts on our website"
   - name: "mastery"
     title: "🛠️ Mastery"
     content:
@@ -294,11 +293,24 @@ The framework is a compass, not a GPS.
 It's meant to be a helpful thought exercise. It's not meant to be a rating system for humans.
 
 ### How does it work?
-The framework covers all the things we're looking for from engineers at Kevala. These things are very roughly divided into four categories, across two axes.
+The framework covers all the things we're looking for from engineers at Kevala. These things are very roughly divided into four categories, across two axes. These aren't weighted equally; code mastery, for example, should probably be the primary focus of SWEIs. But they are all part of your job requirements.
 - Craft - The quality of your technical contributions in our codebase
+  - Code Mastery
+  - Software Design and Architectural Design
+  - Approach to bugs and issues
 - Coordination - The alignment of your contributions to our mission
+  - Decarbonization
+  - Growing the team
+  - Tracking work
 - Impact - How your work makes life better for our users
+  - Relationship to our users
+  - Product ownership
+  - Scaling the platform
 - Influence - How your work makes life better for your coworkers
+  - Processes
+  - Culture
+  - Relationships
+  - Feedback
 
 Every individual will have strengths and weaknesses on these axes. Your manager will work with you to make sure You are happily engaged and utilized. It should be clear, however, where your areas of growth are. If it isn't, ask in your next 1:1 :)
 

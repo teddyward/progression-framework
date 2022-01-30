@@ -15,37 +15,74 @@ topics:
           - "I puzzle through problems. I seek guidance from other engineers, rather than answers."
           - "I document my code's performance, and verify it, using tools like the Chrome Performance tab and PyInstrument."
         exampleCriteria:
-          - criteria: "My code is free of glaring errors. It is well-documented and appropriately utilizes manual vs. automated tests."
+          - criteria: "I regularly ship code that is free of glaring errors."
             examples:
+              - "I can be trusted to implement simple components."
               - "I know what code smells are, and generally avoid them."
-              - "I am familiar with the Google style guides."
-              - "I effectively leverage Cypress, PyTest, or component-level tests."
+              - "I am familiar with the Google style guides. I therefore write pretty HTML/CSS/JS/Python."
+              - "I effectively leverage unit tests via PyTest or a component-level testing library."
               - "I provide sample output, or review apps. These artifacts do, in fact, work."
       - level: 2
         criteria:
           - "I create design documents that acknowledge multiple possible solutions, and their trade-offs. I design interacting components, and solicit feedback on my interfaces."
-          - "I regularly identify and resolve performance and functional defects in our codebase, even in code I didn't write."
+          - "I regularly identify and resolve performance, functional, and security defects in our codebase, even in code I didn't write."
         exampleCriteria:
-          - criteria: "I leverage the idioms and design patterns of my primary programming language. I optimize for either speed or quality (or both?!), depending on the explicitly-stated needs of my team."
+          - criteria: "I write clean code."
             examples:
-              - "I consider metrics (Lighthouse)"
-              - "Flex-box, django APIs, geospatial wizardry, Postgres, Heroku, Mapbox"
+              - "I can be trusted to implement complex components with ambiguous requirements"
+              - "I know most of the idioms of my primary programming language(s)"
+              - "I consider metrics, using tools like Lighthouse and New Relic"
+              - "I am familiar with the APIs and best practices of at least some of our dependencies: Django, PostGIS, Geopandas, Mapbox, Plotly, flex-box, Heroku.."
+              - "I effectively leverage end-to-end tests via Cypress."
               - "I know what design patterns are, and try to leverage them."
               - "My code is self-documenting, but I document it anyway."
               - "My PR descriptions serve as reliable context for future pangolins."
+              - "I know when to optimize for speed over quality, and can justify the decision"
       - level: 3
         criteria:
           - "I keep up-to-date on the ecosystem of tools and libraries supporting my primary programming language."
-          - "I design core components. Simplicity, maintanence, flexibility, and well... SOLIDity are all critical to my designs."
-          - "I am generous with my time, and consider no work 'beneath me.' I effectively and quickly debug cross-module issues, and may intuit where bugs might lie due to my deep knowledge of the libraries, platforms, and systems that my software relies on."
+          - "I am generous with my time, and consider no urgent work 'beneath me.' I effectively and quickly debug cross-module issues, and may intuit where bugs might lie due to my deep knowledge of the libraries, platforms, and systems that my software relies on."
+        exampleCriteria:
+          - criteria: "I write exemplary code."
+            examples:
+              - "I can be trusted to implement core components, and multi-component systems"
+              - "I can be trusted to deploy our applications"
+              - "Simplicity, maintanence, flexibility, and SOLIDity are all critical to my designs"
+              - "I create and evaluate proof-of-concepts"
+              - "I effectively leverage general design patterns"
+              - "I effectively leverage JavaScript or Python patterns for componentization, mixins, etc."
+              - "I contribute to our CI tools, so that future code can be as good as mine"
+              - "I create new abstractions and explain them to other developers"
+              - "I am regarded as a go-to expert in at least one of our dependencies: Django, PostGIS, Geopandas, Mapbox, Plotly, flex-box, Heroku.."
       - level: 4
         criteria:
           - "I track the performance of our whole system, and recommend improvements across the stack."
-          - "I design systems. I’m able to create coherent designs with multiple components interacting across API or system boundaries; bugs do not creep in at the boundaries between components due to mismatches in expectations of what is technically feasible."
+          - "I design systems. I’m able to create coherent designs with multiple components interacting across API or system boundaries. Bugs do not creep in at the boundaries between components due to mismatches in expectations of what is technically feasible."
+        exampleCriteria:
+          - criteria: "I write foundational code."
+            examples:
+              - "Given enough time, I can be trusted to implement component libraries"
+              - "I could be relied on to own the deployment of our applications"
+              - "I have sufficient full-stack skills to whip up a proof-of-concept application"
+              - "I can intuit where bugs might lie due to my deep knowledge of the libraries, platforms, and systems that my software relies on, though I likely delegate the actual fix."
+              - "I identify and fix security and performance bottlenecks, when critical"
+              - "I implement services or libraries that require a deep level of domain knowledge"
+              - "I’m capable of driving overall testing strategy of a significant system with high reliability or quality requirements"
+              - "I identify architecturally significant functional and non-functional requirements, identify conflicts among them, and define possible trade-offs scenarios"
+              - "A new engineer can expect to learn something from a 30 minute conversation with me"
       - level: 5
         criteria:
           - "I keep up-to-date on architectural patterns, and reflect on how Kevala fits in."
           - "I am responsible for reducing leaks in the abstractions of our architecture."
+        exampleCriteria:
+          - criteria: "I write foundational systems."
+            examples:
+              - "I have implemented core libraries used across our platform"
+              - "I contribute to open source software that we depend on"
+              - "I’m capable of designing systems with significant ambiguity and/or lots of systems that depend on it"
+              - "I contribute to inter-departmental systems, and can reduce the complexity of these to foundational concepts"
+              - "I use a risk-based approach to manage technical debt systemically"
+              - "You could write a good blog post on a system I've delivered."
   - name: "coordination"
     title: "☀️ Coordination"
     content:
@@ -94,12 +131,12 @@ topics:
           - "I know our platform's strengths and weaknesses, as far as technical debt and scalability"
       - level: 3
         criteria:
-          - "I have met our users or clients, or at least potential ones."
+          - "I have literally met our users or clients, or at least potential ones."
           - "I own technical decisions with high risk and low reversibility, and delegate technical decisions with low risk and high reversibility"
           - "I identify bottlenecks in our application, and am able to ameliorate the problems, if given the time"
       - level: 4
         criteria:
-          - "I know our users' pain points, and can articulate the steps that we would take to resolve them."
+          - "I know our users' pain points, and can articulate the steps that we would take to resolve them, but I manage competing priorities effectively."
           - "I am the authority for the technical implementation of a customer-facing application. I own its deployment in Heroku."
           - "I identify bottlenecks in our applications, and know when to resolve them and when to delegate their resolution"
       - level: 5
@@ -119,7 +156,7 @@ topics:
           - criteria: "I read PRs from my peers, and indicate that I have done so."
             examples:
               - "Positive comments are great. Even just saying 'TIL ___' is a useful comment."
-              - "This doesn't quite match our style guide."
+              - "'This doesn't quite match our style guide.'"
       - level: 2
         criteria:
           - "I resolve ambiguities in assignments and processes. I proactively present information to the right people."
@@ -133,7 +170,7 @@ topics:
           - criteria: "I read PRs from my peers, and provide detailed feedback."
             examples:
               - "Positive comments are still very much encouraged."
-              - "I noticed a bug in this edge case."
+              - "'I noticed a bug in this edge case.'"
       - level: 3
         criteria:
           - "I build relationships with the data science and data engineering teams to ameliorate technical debt, blindspots, or mismatched requirements."
@@ -153,14 +190,14 @@ topics:
           - criteria: "I read PRs from my peers, and provide holistic feedback."
             examples:
               - "Positive comments are still very much encouraged."
-              - "Did you consider ____? What if we ____?"
-              - "This is not necessarily limited to your immediate team"
+              - "'Did you consider ____?' 'What if we ____?'"
+              - "PR review should not necessarily limited to your immediate team"
       - level: 4
         criteria:
-          - "I build relationships throughout Kevala to drive business goals"
+          - "I build relationships throughout Kevala to drive company goals, and to help other departments achieve their goals."
           - "I drive changes (when sensible) to engineering practices with well-reasoned arguments and a 'strong opinion, weakly held' mentality"
           - "I create an inclusive environment for others and ensure diverse perspectives are included. I leverage the strengths & skills of the members of my team."
-          - "I keep tabs on PR-level work across the team, but focus on providing feedback to component and system design."
+          - "I primarily provide feedback to component and system design. I encourage and support other engineers to achieve outstanding results."
       - level: 5
         criteria:
           - "I drive changes (when sensible) to engineering practices with well-reasoned arguments and a 'strong opinion, weakly held' mentality"
@@ -172,115 +209,7 @@ topics:
               - "Demos to clients"
               - "Tech talks at conferences"
               - "Blog posts on our website"
-  - name: "mastery"
-    title: "🛠️ Mastery"
-    content:
-      - level: 1
-        criteria:
-          - "Learns to write semantic HTML and CSS following guidance and training materials"
-          - "Learns to write correct JavaScript following guidance and training materials"
-          - "Uses Chrome, React, and Redux DevTools effectively to increase productivity during development and debugging"
-          - "Implements simple components"
-          - "Fixes simple bugs"
-          - "Asks questions and actions feedback from mentor"
-        exampleCriteria:
-          - criteria: "Uses git to manage the development workflow effectively"
-            examples:
-              - "Checkout, Push, Pull, Branch, Diff, Merge, Stash, Rebase, etc."
-      - level: 2
-        criteria:
-          - "Writes semantic HTML and CSS following accepted best practices"
-          - "Uses appropriate algorithms and data structures to solve problems"
-          - "Writes Flow types to statically type-check the code at compile-time"
-          - "Writes automated unit and end-to-end tests following accepted best practices"
-          - "Deploys web services into staging and production following our deployment guidelines"
-          - "Assists on the design of new features and components"
-          - "Solves well-defined tasks within our current developer abstractions"
-          - "Integrates with backend APIs and handles successful and failed responses properly"
-          - "Works with users to improve new and existing simple features iteratively"
-          - "Uses a keyboard and screen-reader to manually test their application for accessibility issues"
-          - "Runs automated auditing tools such as Lighthouse before submitting a PR for review"
-          - "Demonstrates awareness of a range of security considerations, and mitigates against them"
-          - "Has multiple examples of where performance was considered as part of a solution"
-        exampleCriteria:
-          - criteria: "Applies fundamental UX and accessibility principles to common problems such as form design"
-            examples:
-              - "Referencing (and improving) existing Design Systems where possible"
-          - criteria: "Writes correct JavaScript code following accepted best practices"
-            examples:
-              - "Follows our JavaScript Coding Conventions & Best Practices; uses language-level primitives correctly"
-          - criteria: "Implements simple components following accepted best practices"
-            examples:
-              - "Follows React Development Conventions & Best Practices; uses component state and lifecycle methods correctly"
-          - criteria: "Uses shared libraries to reuse existing functionality"
-            examples:
-              - "lib.money"
-              - "lib.api"
-              - "lib.identity-verification, etc."
-      - level: 3
-        criteria:
-          - "Uses appropriate design patterns to solve problems"
-          - "Identifies obvious deficiencies in the development processes and supports activities to improve them"
-          - "Assists more experienced engineers on the design of larger features"
-          - "Modifies and improves code outside of the developer abstractions and reasons about the improvements effectively"
-          - "Fixes bugs in asynchronous code"
-          - "Debugs production issues"
-          - "Explains developer abstractions and how to contribute to them to other engineers"
-          - "Collaborates with designers and user researchers to create prototypes and to evaluate them"
-          - "Differentiates between user needs and desires and prioritises accordingly"
-        exampleCriteria:
-          - criteria: "Implements non-trivial components"
-            examples:
-              - "Uses modern CSS features like flex-box, grid, media-queries, selectors, etc"
-              - "Uses advanced component patterns higher-order components, render props, controlled components, compound components"
-          - criteria: "Writes effective asynchronous code"
-            examples:
-              - "Demonstrates solid understanding of the JavaScript runtime; reasons effectively about the runtime behaviour of asynchronous code; uses async/await, generators and Redux-Saga’s to implement asynchronous code"
-          - criteria: "Writes effective JavaScript by applying fundamental functional and reactive principles and techniques where appropriate and guides others in so doing"
-            examples:
-              - "Uses uses event streams, immutable data structures, pure functions, functional composition, memoization, etc."
-          - criteria: "Considers metrics when developing, and uses appropriate services to check quality levels"
-            examples:
-              - "A range, from services such as Lighthouse, WebPageTest, WAVE etc" 
-      - level: 4
-        criteria:
-          - "Writes code that serves as a definitive example for new engineers"
-          - "Makes contributions to library code or other core parts of the applications"
-          - "Makes contributions to our development tools and build processes"
-          - "Writes complex asynchronous and concurrent code"
-          - "Identifies optimisation opportunities in the development process and contributes to the implementation of proposed solutions"
-          - "Builds maintainable and flexible components and applications"
-          - "Leads the refactoring of complex parts of the system"
-          - "Debugs and fixes complex issues at speed"
-          - "Identifies and fixes security weaknesses"
-          - "Identifies and fixes performance bottlenecks in applications"
-          - "Explains all aspects of the web platform to new engineers"
-          - "Implements services or libraries that require a deep level of domain knowledge"
-          - "Puts users first and can manage competing priorities effectively"
-      - level: 5
-        criteria:
-          - "Makes major contributions to library code or core parts of the application"
-          - "Contributes to external technologies or libraries that we depend on"
-          - "Anticipates platform and project needs, technical debt and common issues intuitively"
-          - "Develops clear technical solutions from ambiguous requirements"
-          - "Produces technical designs for large complex projects"
-          - "Uncovers and fixes tricky bugs that have previously evaded detection"
-          - "Demonstrates a deep level of knowledge in a specific area"
-          - "Serves as a technical authority on a technology or an area of the codebase"
-          - "Reviews technical designs and pull requests for large complex projects"
-          - "Encourages and supports other engineers to achieve outstanding results"
-          - "Creates major contributions to our documentation, and creates documents that provide guidelines and best practices to other engineers"
-          - "Works with technical and non-technical stakeholders to identify high-level requirements and turns them into discrete technical concerns"
-          - "Makes major contributions to technologies and libraries that we depend on"
-          - "Uses a risk-based approach and manages technical debt systematically to focus the team’s design and development efforts on the most important problems"
-          - "Works with business and technology stakeholder to translate difficult business problems into technical designs, thereby ensuring that the organisation derives maximum value from services"
-          - "Identifies architecturally significant functional and non-functional requirements, identifies conflicts among them, and defines possible trade-offs scenarios"
-          - "Articulates high-level technical goals, concerns, trade-offs, and decisions to the rest of the company effectively"
-          - "Facilitates technical decision making in complex and ambiguous situations"
-          - "Promotes architectural thinking and good engineering practices at scale"
-          - "Makes improvements that affect important non-functional requirements that have an effect on the entire web-platform"
-          - "Serves as a technical authority in the wider engineering community"
-          - "Identifies and explores opportunities for service and business improvement"
+              - "Serves as a technical authority in the wider engineering community"
 ---
 ### About this page
 This engineering progression framework is a tool to help engineers and managers:
@@ -316,7 +245,7 @@ Every individual will have strengths and weaknesses on these axes. Your manager 
 
 ### What are the levels?
 
-Integer levels translate directly to titles:
+Integers translate directly to titles:
 
 - 1 - SWEI
 - 2 - SWEII

@@ -12,6 +12,7 @@ export const BREAKPOINT_DESKTOP = 1300
 export const KEVALA_DARK_BLUE = '#070f1b'
 export const KEVALA_BLUE = '#245297'
 export const KEVALA_LIGHT_BLUE = '#76a0de'
+export const KEVALA_ORANGE = '#ff802B'
 
 // Styles
 // Error page
@@ -270,14 +271,14 @@ export const LevelsText = styled.h2`
 
   &:hover {
     opacity: 0.5;
-    color: #FF802B;
+    color: ${KEVALA_ORANGE};
   }
 
   ${props =>
     props.active &&
     css`
       opacity: 1;
-      color: #FF802B;
+      color: ${KEVALA_ORANGE};
     `}
 `
 
@@ -550,6 +551,13 @@ export const CardTitle = styled.p`
   color: ${KEVALA_DARK_BLUE};
   margin-top: 0;
   font-size: 1.4rem;
+`
+
+export const CardSubtitle = styled.p`
+  font-weight: 200;
+  color: ${KEVALA_BLUE};
+  margin-top: 0;
+  font-size: 0.8rem;
 `
 
 export const CardTitleGroup = styled.div`

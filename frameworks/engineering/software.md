@@ -9,6 +9,7 @@ homepage: true
 topics:
   - name: "craft"
     title: "💻 Craft"
+    subtitle: "Your technical contributions"
     content:
       - level: 1
         criteria:
@@ -85,6 +86,7 @@ topics:
               - "You could write a good blog post on a system I've delivered."
   - name: "coordination"
     title: "☀️ Coordination"
+    subtitle: "Alignment with Kevala"
     content:
       - level: 1
         criteria:
@@ -118,6 +120,7 @@ topics:
           - "I ensure the long term success of our platform by identifying horizontal engineering objectives, and prioritizing these across a multi-year time horizon."
   - name: "impact"
     title: "👩‍💼 Impact"
+    subtitle: "Helping users and clients"
     content:
       - level: 1
         criteria:
@@ -146,6 +149,7 @@ topics:
           - "I understand the limitations of our platform, and draft roadmaps to their resolution (regardless of whether these are actualized)"
   - name: "influence"
     title: "✨ Influence"
+    subtitle: "Helping Kevaliers"
     content:
       - level: 1
         criteria:
@@ -227,7 +231,7 @@ The framework covers all the things we're looking for from engineers at Kevala. 
   - Code Mastery
   - Software Design and Architectural Design
   - Approach to bugs and issues
-- Coordination - The alignment of your contributions to our mission
+- Coordination - The alignment of your contributions to Kevala's objectives
   - Decarbonization
   - Growing the team
   - Tracking work
@@ -258,4 +262,5 @@ These bands are quite wide. It is not reasonable to expect to rocket up them in 
 ### Give us your feedback!
 This is a rough draft. Let us know if it should have more depth, examples, or if you disagree with what we value.
 
-* "we" currently refers to "Teddy Ward" in this document, since the draft is _so_ rough, that I'm the only one who has seen it :p
+
+\* "we" currently refers to "Teddy Ward" in this document, since the draft is _so_ rough, that I'm the only one who has seen it :p

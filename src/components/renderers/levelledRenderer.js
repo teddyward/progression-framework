@@ -7,6 +7,7 @@ import Header from '../header'
 import {
   Card,
   CardContentList,
+  CardSubtitle,
   CardTitle,
   CardTitleGroup,
   CenteredElement,
@@ -89,6 +90,7 @@ export default class LevelledRenderer extends React.Component<Props, State> {
     const genericDataNames = props.genericData.topics.map(obj => obj.name)
     const pageDataNames = props.pageData.topics.map(obj => obj.name)
 
+    // TODO (teddyward): Need to remove these generic things - don't like them.
     // isGeneric checks to see if the variable names and the "Title" is present on both the generic
     // and page date we receive. This should only flag the generic framework, unless someone redeclares the
     // framework titles and variable names in a new framework (which should not get past review)
@@ -176,6 +178,7 @@ export default class LevelledRenderer extends React.Component<Props, State> {
       genericTopic != null && !R.isEmpty(genericTopic)
         ? genericTopic.map(obj => obj.title)[0]
         : topic.title
+    const subtitle = topic.subtitle || ''
 
     const frameworkCriteria = topic.content
       .filter(objContent => objContent.level === level)
@@ -222,6 +225,7 @@ export default class LevelledRenderer extends React.Component<Props, State> {
         <FrameworkCard key={topic.name}>
           <CardTitleGroup>
             <CardTitle>{title}</CardTitle>
+            <CardSubtitle>{subtitle}</CardSubtitle>
           </CardTitleGroup>
           <CardContentList>
             {frameworkCriteria != null && !R.isEmpty(frameworkCriteria)
@@ -235,7 +239,7 @@ export default class LevelledRenderer extends React.Component<Props, State> {
             {!isGeneric &&
             !R.isEmpty(genericCriteria) &&
             genericCriteria != null
-              ? genericCriteria
+              ? null
               : null}
           </CardContentList>
         </FrameworkCard>
